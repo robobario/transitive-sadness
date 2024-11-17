@@ -1,7 +1,7 @@
 public class UseIt {
 
     public static void main(String[] args) {
-        isNullOrEmpty("ping");
+        System.out.println(isNullOrEmpty("ping"));
     }
 
     static boolean isNullOrEmpty(String ping) {
