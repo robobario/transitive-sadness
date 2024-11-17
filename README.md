@@ -8,4 +8,4 @@ The oddity:
 - project-a ends up with a compile dependency on guava transitively, `mvn exec:java -Dexec.mainClass=UseIt -pl :project-a` succeeds
 - project-b does not have guava available at runtime, `mvn exec:java -Dexec.mainClass=OtherStringUtil -pl :project-b` fails with a ClassNotFound (fails in IDE too)
 
-In our project the assembly plugin on project-b does include guava.
+In our project an assembly plugin on project-b would include guava interestingly.
